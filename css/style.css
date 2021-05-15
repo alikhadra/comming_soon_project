@@ -1,0 +1,252 @@
+@font-face {
+    font-family: ar-font;
+    src: url(../fonts/Cairo-SemiBold.ttf);
+}
+
+body {
+    direction: rtl;
+    font-family: ar-font;
+}
+
+header {
+    background-image: url(../img/header-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+header .brand {
+    padding: 20px 10px;
+    margin: 80px auto 50px;
+    border-bottom: 5px solid #474c55;
+    display: inline-block;
+}
+
+header .page-heading h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 75px;
+}
+
+header .page-heading p {
+    font-size: 18px;
+    color: #acacac;
+    line-height: 25px;
+    width: 40%;
+    margin: 0 auto;
+}
+
+header .counter .countdown-amount {
+    font-size: 60px;
+    font-weight: bold;
+    color: #ffce00;
+    display: block;
+}
+
+header .counter .countdown-period {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    display: block;
+}
+
+header .counter .countdown-section {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+header .counter {
+    margin: 60px auto;
+    padding: 30px;
+}
+
+header .send-notification p {
+    font-size: 18px;
+    color: #fff;
+}
+
+header .send-notification .input-group, footer .input-group {
+    width: 30%;
+    margin: 0 auto;
+}
+
+header .send-notification .input-group input, footer .top-footer .input-group input {
+    font-size: 18px;
+    font-family: ar-font;
+    color: black;
+    border-width: 2px;
+    border-color: #e6e6e6;
+    border-radius: 0px;
+    height: auto;
+    box-shadow: 0 0 0;
+}
+
+header .send-notification .input-group button, footer button {
+    border-radius: 0px;
+    padding: .5rem 1.5rem;
+    background-color: #ffce00;
+}
+
+footer .top-footer .overlay .input-group button {
+    border-radius: 0;
+    background-color: #393939;
+    padding: .5rem 1.5rem;
+}
+
+footer .top-footer .overlay .input-group button:focus {
+    box-shadow: 0 0 0;
+    border-color: transparent;
+}
+
+footer .top-footer .overlay .alert {
+    display: none;
+    position: absolute;
+    top: 110%;
+    width: 100%;
+}
+
+header .send-notification .input-group .alert, footer .alert {
+    display: none;
+}
+
+footer .top-footer .overlay .input-group {
+    width: 30%;
+    margin: 0 auto;
+    position: relative;
+}
+
+footer .top-footer .overlay .input-group input {
+    border-radius: 0;
+    font-size: 18px;
+    font-family: ar-font;
+    color: black;
+    border-color: #fff;
+}
+
+footer .top-footer .overlay .input-group input:focus {
+    box-shadow: 0 0 0;
+    border-color: #fff;
+}
+
+section.features h2 {
+    margin-bottom: 50px;
+    font-size: 45px;
+    color: #555;
+}
+
+section.features {
+    padding: 100px 0;
+}
+
+section.features .media {
+    border: px solid #fafafa;
+    padding: 40px 10px;
+    margin-bottom: 20px;
+    max-height: 190px;
+}
+
+section.features .media .media-body h5 {
+    font-size: 24px;
+    color: #555;
+}
+
+section.features .media .media-body p {
+    font-size: 15px;
+    color: #a1a1a1;
+    line-height: 25px;
+}
+
+section.features div[class*="col-"]:nth-child(even) {
+    text-align: left;
+}
+
+footer {
+    background-image: url(../img/footer-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+footer .top-footer .overlay {
+    background-color: rgba(255, 204, 0, 0.7);
+    padding: 60px 0;
+}
+
+footer .contact .overlay {
+    background-color: rgba(28, 28, 28, 0.9);
+    padding: 60px 0 10px;
+    color: #fff;
+}
+
+footer .top-footer .overlay h3 {
+    font-size: 30px;
+    margin: 0 auto 30px;
+}
+
+footer .contact .overlay h3 {
+    font-size: 30px;
+    margin: 0 auto 30px;
+}
+
+footer .contact .overlay ul li {
+    margin: 0 5px;
+}
+
+footer .contact .overlay ul li a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.14);
+    color: #fff;
+    font-size: 30px;
+}
+
+footer .contact .overlay ul li a.facebook:hover {
+    background-color: #3b5999;
+}
+
+footer .contact .overlay ul li a.twitter:hover {
+    background-color: #55acee;
+}
+
+footer .contact .overlay ul li a.linkedin:hover {
+    background-color: #0077B5;
+}
+
+footer .contact .overlay ul li a.instagram:hover {
+    background-color: #e4405f;
+}
+
+footer .contact .overlay hr {
+    width: 25%;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 50px;
+}
+
+footer .contact .overlay p a {
+    color: #b4b4b4;
+}
+
+footer .contact .overlay p a i {
+    color: #ffce00;
+    margin-left: 5px;
+}
+
+footer .contact .overlay ul li a {
+    Transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .animate__bounceIn {
+        animation-name: none !important;
+    }
+    .animate__fadeInUp {
+        animation-name: none !important;
+    }
+    .animate__fadeInDown {
+        animation-name: none !important;
+    }
+    .animate__zoomIn {
+        animation-name: none !important;
+    }
+}
