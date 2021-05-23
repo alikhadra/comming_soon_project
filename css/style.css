@@ -65,12 +65,14 @@ header .send-notification p {
     color: #fff;
 }
 
-header .send-notification .input-group, footer .input-group {
+header .send-notification .input-group,
+ footer .input-group {
     width: 30%;
     margin: 0 auto;
 }
 
-header .send-notification .input-group input, footer .top-footer .input-group input {
+header .send-notification .input-group input,
+ footer .top-footer .input-group input {
     font-size: 18px;
     font-family: ar-font;
     color: black;
@@ -87,45 +89,15 @@ header .send-notification .input-group button, footer button {
     background-color: #ffce00;
 }
 
-footer .top-footer .overlay .input-group button {
-    border-radius: 0;
-    background-color: #393939;
-    padding: .5rem 1.5rem;
-}
-
-footer .top-footer .overlay .input-group button:focus {
-    box-shadow: 0 0 0;
-    border-color: transparent;
-}
-
-footer .top-footer .overlay .alert {
-    display: none;
-    position: absolute;
-    top: 110%;
-    width: 100%;
-}
 
 header .send-notification .input-group .alert, footer .alert {
     display: none;
 }
 
-footer .top-footer .overlay .input-group {
-    width: 30%;
-    margin: 0 auto;
+section.features {
+    padding: 100px 0;
     position: relative;
-}
-
-footer .top-footer .overlay .input-group input {
-    border-radius: 0;
-    font-size: 18px;
-    font-family: ar-font;
-    color: black;
-    border-color: #fff;
-}
-
-footer .top-footer .overlay .input-group input:focus {
-    box-shadow: 0 0 0;
-    border-color: #fff;
+    text-align: right;
 }
 
 section.features h2 {
@@ -134,15 +106,13 @@ section.features h2 {
     color: #555;
 }
 
-section.features {
-    padding: 100px 0;
-}
 
 section.features .media {
-    border: px solid #fafafa;
+    border: 4px solid #fafafa;
     padding: 40px 10px;
     margin-bottom: 20px;
     max-height: 190px;
+    position: relative;
 }
 
 section.features .media .media-body h5 {
@@ -170,16 +140,48 @@ footer .top-footer .overlay {
     background-color: rgba(255, 204, 0, 0.7);
     padding: 60px 0;
 }
+footer .top-footer .overlay .input-group {
+    width: 30%;
+    margin: 0 auto;
+    position: relative;
+}
+footer .top-footer .overlay .input-group button {
+    border-radius: 0;
+    background-color: #393939;
+    padding: .5rem 1.5rem;
+}
+footer .top-footer .overlay .input-group button:focus {
+    box-shadow: 0 0 0;
+    border-color: transparent;
+}
 
-footer .contact .overlay {
-    background-color: rgba(28, 28, 28, 0.9);
-    padding: 60px 0 10px;
-    color: #fff;
+footer .top-footer .overlay .alert {
+    display: none;
+    position: absolute;
+    top: 110%;
+    width: 100%;
+}
+
+
+
+footer .top-footer .overlay .form-group .input-group input {
+    border-radius: 0;
+    font-size: 18px;
+    font-family: ar-font;
+    color: black;
+    border-color: #fff;
+    height: auto;
+}
+
+footer .top-footer .overlay .form-group .input-group input:focus {
+    box-shadow: 0 0 0;
+    border-color: #fff;
 }
 
 footer .top-footer .overlay h3 {
     font-size: 30px;
     margin: 0 auto 30px;
+    width: 80%;
 }
 
 footer .contact .overlay h3 {
@@ -199,6 +201,11 @@ footer .contact .overlay ul li a {
     background-color: rgba(255, 255, 255, 0.14);
     color: #fff;
     font-size: 30px;
+}
+footer .contact .overlay {
+    background-color: rgba(28, 28, 28, 0.9);
+    padding: 60px 0 10px;
+    color: #fff;
 }
 
 footer .contact .overlay ul li a.facebook:hover {
@@ -236,6 +243,7 @@ footer .contact .overlay ul li a {
     Transition: all 0.3s ease;
 }
 
+
 @media (max-width: 768px) {
     .animate__bounceIn {
         animation-name: none !important;
@@ -249,4 +257,12 @@ footer .contact .overlay ul li a {
     .animate__zoomIn {
         animation-name: none !important;
     }
+   
+   header .send-notification .input-group, footer .top-footer .overlay .input-group {
+    width: 60%;
+  }
+    header .page-heading h1 {
+    font-size: 40px;
+  } 
+
 }
